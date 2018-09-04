@@ -1,12 +1,18 @@
 package com.example.coolweather.db
 
-import android.provider.ContactsContract
 import org.litepal.crud.DataSupport
 
-class County:DataSupport(){
-    var id:Int?=null
-    var countyName:String?=null
-    var weatherId:Int?=null
-    var cityId:Int?=null
+/**
+ * Created by Administrator on 2018/7/4/004.
+ */
 
+class County : DataSupport() {
+    //id每个实体类中都应该有的字段
+    var id: Int = 0
+    //countyName 记录县的名字
+    var countyName: String? = null
+    //weatherId 记录天气的id
+    var weatherId: String? = null
+    //cityId 记录市的代码
+    var cityId: Int = 0
 }
