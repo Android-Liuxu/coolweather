@@ -2,6 +2,7 @@ package com.example.coolweather
 
 import android.app.Fragment
 import android.app.ProgressDialog
+import android.content.Intent
 import android.content.res.Configuration
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -58,6 +59,13 @@ override fun onActivityCreated(savedInstanceState: Bundle?) {
         }else if (currentLevel == LEVEL_CITY) {
             selectedCity = cityList!![position]
             queryCounties()
+        }else if(currentLevel == LEVEL_COUNTY) {
+            val weatherId = countyList!![position].countyName
+                val intent = Intent(activity, WeatherActivity::class.java)
+                intent.putExtra("county_name", weatherId)
+                startActivity(intent)
+                activity.finish()
+
         }
     }
     back_button.setOnClickListener {

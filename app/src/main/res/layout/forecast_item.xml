@@ -11,7 +11,7 @@
         android:textColor="#fff"
         android:layout_weight="2"/>
     <TextView
-        android:id="@+id/info_text"
+        android:id="@+id/info2_text"
         android:layout_width="0dp"
         android:layout_gravity="center_vertical"
         android:layout_height="wrap_content"
@@ -19,7 +19,7 @@
         android:textColor="#fff"
         android:layout_weight="1"/>
     <TextView
-        android:id="@id/max_text"
+        android:id="@+id/max_text"
         android:layout_width="0dp"
         android:layout_gravity="center_vertical"
         android:layout_height="wrap_content"

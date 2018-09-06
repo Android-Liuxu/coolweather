@@ -8,6 +8,8 @@ import com.example.coolweather.db.County
 import com.example.coolweather.db.Province
 //import com.example.coolweather.gson.Weather
 import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
+import interfaces.heweather.com.interfacesmodule.bean.weather.Weather
 
 import org.json.JSONArray
 import org.json.JSONException
@@ -92,20 +94,6 @@ object Utility {
 
     }
 
-//    /**
-//     * 将返回的JSON数据解析成Weather实体类
-//     */
-//    fun handleWeatherResponse(response: String): Weather? {
-//        try {
-//            val jsonObject = JSONObject(response)
-//            val jsonArray = jsonObject.getJSONArray("HeWeather")
-//            val weatherContent = jsonArray.getJSONObject(0).toString()
-//            return Gson().fromJson<Weather>(weatherContent, Weather::class.java!!)
-//
-//        } catch (e: Exception) {
-//            e.printStackTrace()
-//        }
-//
-//        return null
-//    }
+
+
 }

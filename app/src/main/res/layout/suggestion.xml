@@ -9,8 +9,8 @@
         android:layout_height="wrap_content"
         android:text="生活建议"
         android:textSize="20sp"
-        android:layout_marginLeft="15dp"
-        android:layout_margintop="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
         android:textColor="#fff"/>
     <TextView
         android:id="@+id/comfort_text"
